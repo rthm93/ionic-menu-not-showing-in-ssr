@@ -1,0 +1,34 @@
+<ion-menu content-id="mainContent" side="end" [menuId]="'hardwares'">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Hardwares</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item [routerLink]="['/hardwares/cpus']" button>
+        <ion-label> CPUs </ion-label>
+
+        <img
+          slot="start"
+          src="https://img.icons8.com/windows/32/000000/processor.png"
+        />
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Tab 1 </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="mainContent" overflow-scroll="true">
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>
